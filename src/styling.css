@@ -237,7 +237,8 @@ html.mobile {
   text-align: center;
 }
 
-html.mobile #lapis {
+html.iphone #lapis,
+html.ipad #lapis {
   min-height: -webkit-fill-available;
 }
 
