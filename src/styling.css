@@ -237,6 +237,11 @@ html.mobile {
   text-align: center;
 }
 
+html.iphone #lapis,
+html.ipad #lapis {
+  min-height: -webkit-fill-available;
+}
+
 /* ------- Mobile css ------- */
 @media (max-width: 512px) {
   .images-container {
