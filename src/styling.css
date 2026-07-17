@@ -1145,3 +1145,47 @@ html.mobile .sentence, html:not(.mobile) .sentence-alt,
     }
   }
 }
+
+.tone-1,
+.word.active .tone-hover-1 {
+    color: #E60000;
+}
+
+.tone-2,
+.word.active .tone-hover-2 {
+    color: #E68A00;
+}
+
+.tone-3,
+.word.active .tone-hover-3 {
+    color: #00802B;
+}
+
+.tone-4,
+.word.active .tone-hover-4 {
+    color: #005CE6;
+}
+
+/*.tone-5,
+.word.active .tone-hover-5 {
+    color: #AC00E6;
+}*/
+
+.tone-5,
+.word.active .tone-hover-5 {
+    color: #808080;
+}
+
+
+.reading-invisible rt {
+    display: none;
+}
+
+.reading-hover:not(.active) rt {
+    display: none;
+}
+
+
+ruby > rt {
+    user-select: none;
+}
