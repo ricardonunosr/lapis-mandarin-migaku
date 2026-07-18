@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'Version to deploy'
+        description: 'Version to deploy (e.g., v1.0.0)'
         required: true
 
 jobs:
@@ -19,30 +19,30 @@ jobs:
         uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.8'
+          python-version: '3.11'
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; else pip install genanki; fi
 
       - name: Generate Anki Deck
-        run: python genapkg.py "Lapis-${{ github.event.inputs.version }}.apkg"
+        run: python genapkg.py "Lapis-Mandarin-Migaku-${{ github.event.inputs.version }}.apkg"
 
       - name: Create Draft Release
         id: create_release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.event.inputs.version }}
-          name: "Lapis ${{ github.event.inputs.version }}"
-          files: "build/Lapis-${{ github.event.inputs.version }}.apkg"
+          name: "Lapis Mandarin Migaku ${{ github.event.inputs.version }}"
+          files: "build/Lapis-Mandarin-Migaku-${{ github.event.inputs.version }}.apkg"
           draft: true 
           body: |
-            ## How to update Lapis
-            1. Backup your custom settings from the note's styling
-            2. Updating the template:
-            2a. Import the apkg inside Anki with the following options: <img src="https://github.com/${{ github.repository }}/blob/main/assets/import_options.png" alt="import options">
-            2b. Alternatively, you can manually update your Lapis card by selecting a card, clicking Cards..., and copying the contents of front.html, back.html, and styling.css accordingly. Then, click Save to apply the changes.
-            3. Copy your settings back in the note's styling
+            ## How to update Lapis Mandarin Migaku
+            1. Backup your custom settings from the note's styling section.
+            2. Update the template:
+               - Import the `.apkg` inside Anki using the update options shown here: <img src="https://github.com/${{ github.repository }}/blob/main/assets/import_options.png" alt="import options">
+               - Alternatively, manually update your card templates by selecting a card, clicking **Cards...**, and copying the contents of `front.html`, `back.html`, and `styling.css` from the source files. Save to apply.
+            3. Paste your custom settings back into the top of the note's styling.

@@ -1,51 +1,42 @@
-- name: Expression
-  font: Hiragino Sans Pr6N
-  size: 50
-- name: ExpressionFurigana
-  font: Hiragino Sans Pr6N
-- name: ExpressionReading
-  font: Hiragino Sans Pr6N
-- name: ExpressionAudio
-  font: Hiragino Sans Pr6N
-  size: 10
-- name: SelectionText
-  font: Hiragino Sans Pr6N
-- name: MainDefinition
-  font: Hiragino Sans Pr6N
-- name: DefinitionPicture
-  font: Hiragino Sans Pr6N
-  size: 15
 - name: Sentence
-  font: Hiragino Sans Pr6N
+  font: PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif
   size: 20
-- name: SentenceFurigana
-  font: Hiragino Sans Pr6N
-  size: 20
-- name: SentenceAudio
-  font: Hiragino Sans Pr6N
+- name: Translation
+  font: PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif
+  size: 16
+- name: Target Word
+  font: PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif
+  size: 50
+- name: Definitions
+  font: PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif
+  size: 16
+- name: Screenshot
+  font: PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif
+- name: Sentence Audio
+  font: PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif
   size: 10
-- name: Picture
-  font: Hiragino Sans Pr6N
-- name: Glossary
-  font: Hiragino Sans Pr6N
-- name: Hint
-  font: Hiragino Sans Pr6N
-- name: IsWordAndSentenceCard
-  font: Hiragino Sans Pr6N
-- name: IsClickCard
-  font: Hiragino Sans Pr6N
-- name: IsSentenceCard
-  font: Hiragino Sans Pr6N
-- name: IsAudioCard
-  font: Hiragino Sans Pr6N
-- name: PitchPosition
-  font: Hiragino Sans Pr6N
-- name: PitchCategories
-  font: Hiragino Sans Pr6N
-- name: Frequency
-  font: Hiragino Sans Pr6N
-- name: FreqSort
-  font: Hiragino Sans Pr6N
-- name: MiscInfo
-  font: Hiragino Sans Pr6N
-  size: 15
+- name: Word Audio
+  font: PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif
+  size: 10
+- name: Images
+  font: PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif
+- name: Example Sentences
+  font: PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif
+  size: 18
+- name: Alternate Sentence
+  font: PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif
+  size: 18
+- name: Is Vocabulary Card
+  font: PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif
+- name: Is Audio Card
+  font: PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif
+- name: Is Click Card
+  font: PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif
+- name: Is Word And Sentence Card
+  font: PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif
+- name: Notes
+  font: PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif
+  size: 14
+- name: Reading
+  font: PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif
+  size: 24
