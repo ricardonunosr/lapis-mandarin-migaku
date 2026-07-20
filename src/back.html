@@ -30,7 +30,7 @@
         <div class="sentence">
             {{#Screenshot}}<div class="image-alt tappable {{Tags}}">{{Screenshot}}</div>{{/Screenshot}}
             <div class="field" data-reading="yes" data-reading-type="pinyin" data-tone-coloring="yes">{{Sentence}}</div>
-            <div>{{Translation}}</div>
+            <div class="translation">{{Translation}}</div>
             <div class="audio-buttons-alt"></div>
         </div>
 
@@ -53,7 +53,7 @@
         <div class="sentence-alt">
             {{#Screenshot}}<div class="image-alt tappable {{Tags}}">{{Screenshot}}</div>{{/Screenshot}}
             <div class="field" data-reading="yes" data-reading-type="pinyin" data-tone-coloring="yes">{{Sentence}}</div>
-            <div>{{Translation}}</div>
+            <div class="translation-alt" >{{Translation}}</div>
             <div class="audio-buttons-alt"></div>
         </div>
 
@@ -112,7 +112,7 @@
     // Hack to add multiple buttons without Anki playing them multiple times
     function addAudioButtons() {
         const audioContainers = document.querySelectorAll(".audio-buttons, .audio-buttons-alt");
-        audioContainers.forEach(audio => audio.innerHTML = `{{Word Audio}}{{Sentence Audio}}`);
+        audioContainers.forEach(audio => audio.innerHTML = `{{Sentence Audio}}{{Word Audio}}`);
     }
 
     (function () {
